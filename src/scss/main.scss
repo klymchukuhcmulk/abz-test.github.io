@@ -1,0 +1,145 @@
+// Varibles
+@import "var";
+// Styles for other components
+@import "intro";
+@import "users";
+@import "reg";
+@import "modal";
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+//=========================================Global=======================================================================
+* {
+  padding: 0;
+  margin: 0;
+  font-family: $fontFam;
+  font-weight: 400;
+}
+h1 {
+  font-size: 50px;
+  line-height: 54px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: $primaryColor;
+}
+.acrive {
+  color: $secondaryColor
+}
+button {
+  outline: none;
+  border: none;
+}
+.singleBtn {
+  border-radius: 5px;
+  background: $primaryColor;
+  padding: 13px 61px;
+  color: white;
+}
+.singleBtn:hover {
+  background: rgb(194, 77, 61);
+}
+.disabledBtn {
+  background: rgb(215, 215, 215);
+  color: rgb(153, 153, 153);
+}
+.flatBtn {
+  background: transparent;
+  color: $primaryColor;
+}
+.flatBtn:hover {
+  color: rgb(194, 77, 61);
+}
+
+//=========================================Header=======================================================================
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $backgroundColor;
+}
+.navMenu {
+  a {
+    margin: 0px 15px;
+  }
+}
+.navBtn, .menuSidebar {
+  display: none;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #e2e2dd;
+}
+// MEDIA
+@media only screen and (max-width: 768px) {
+  h1 {
+    display: inline;
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .navBtn {
+    display: block;
+  }
+  .navMenu {
+    display: none;
+  }
+  .menuSidebar {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background: $backgroundColor;
+    .navSidebar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .hr {
+      height: 1px;
+      background-color: #dfdfdf;
+    }
+    a {
+      margin: 0 70px 0 10px;
+    }
+    img {
+      margin: 10px 70px 5px 10px;
+    }
+  }
+  .menuSidebarBack {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    display: inline;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}

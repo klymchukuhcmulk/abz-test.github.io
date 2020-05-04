@@ -1,0 +1,130 @@
+.first-intro {
+  margin-top: 50px;
+  background-image: url("assets/banner-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  button {
+    color: white;
+  }
+  padding: 115px 0 115px 30px;
+  .first-intro-container {
+    width: 95%;
+    margin: 0 auto;
+    button p {
+      width: 100%;
+      margin: 0;
+    }
+    p {
+      br {
+        display: none;
+      }
+      width: 587px;
+      margin: 41px 0;
+    }
+    h1 {
+      //width: 60%;
+      text-transform: uppercase;
+    }
+  }
+}
+.second-intro {
+  margin: 150px auto;
+  width: 95%;
+  h1 {
+    text-align: center;
+    margin: 50px;
+  }
+  .second-intro-body {
+    display: flex;
+    div:first-child {
+      padding: 0 10px;
+      width: 35%;
+      margin-right: 30px;
+      img {
+        width: 100%;
+      }
+    }
+    div:last-child {
+      width: 65%;
+      p {
+        margin: 30px 0;
+      }
+    }
+  }
+}
+
+//MEDIA
+@media only screen and (max-width: 768px) {
+  .first-intro {
+    .first-intro-container {
+      button p {
+        width: 100%;
+        margin: 0;
+      }
+      p {
+        width: 80%;
+        margin: 41px 0;
+      }
+
+      h1 {
+        br {
+          display: none;
+        }
+        width: 500px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .first-intro {
+    text-align: center;
+    padding: 50px 10px;
+    .first-intro-container {
+      width: 95%;
+      margin: 0 auto;
+      button p {
+        width: 100%;
+        margin: 0;
+      }
+      p {
+        width: 100%;
+        margin: 41px 0;
+      }
+      h1 {
+        //width: 60%;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .second-intro {
+    margin: 100px auto;
+    width: 95%;
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+    .second-intro-body {
+      display: flex;
+      flex-direction: column;
+      div:first-child {
+        padding: 0 10px;
+        width: 100%;
+        margin-right: 30px;
+        img {
+          width: 100%;
+        }
+      }
+      div:last-child {
+        width: 100%;
+        p {
+          margin: 30px 0;
+        }
+        a {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

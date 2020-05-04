@@ -1,0 +1,45 @@
+.users-wrap {
+  text-align: center;
+  padding: 150px 0;
+  background: $backgroundColor2;
+  button {
+    margin: 41px auto;
+  }
+}
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 41px auto;
+  .user {
+    box-sizing: border-box;
+    width: 33%;
+    margin-top: 62px;
+    .user-wrap {
+      width: 250px;
+      margin: 0 auto;
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px 5px;
+        //padding: 12px 5px;
+      }
+      h2 {
+        margin: 20px 0 15px 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px){
+}
+
+@media only screen and (max-width: 450px){
+  .users-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .user {
+      width: 100%;
+    }
+  }
+}

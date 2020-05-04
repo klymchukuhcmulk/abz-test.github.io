@@ -1,0 +1,63 @@
+.back {
+  z-index: 5;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+}
+.window-wrap {
+  position: fixed;
+  bottom: 0;
+  top: 38%;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  .modal {
+    width: 394px;
+    height: 190px;
+    margin: auto;
+    background: $backgroundColor;
+    box-sizing: border-box;
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      height: 60px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #d9dcd7;
+      padding: 15px;
+      svg {
+        height: 10px;
+        margin: 10px 0;
+        fill: #646464;
+      }
+      svg:hover {
+        fill: black;
+      }
+    }
+    .modal-message {
+      height: 60px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #d9dcd7;
+      padding: 15px;
+      color: #646464;
+    }
+    .modal-control {
+      padding: 10px;
+      box-sizing: border-box;
+      button {
+        padding: 10px;
+        float: right;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .window-wrap {
+    .modal {
+      width: 80%;
+    }
+  }
+}
